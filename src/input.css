@@ -317,7 +317,7 @@ header .btn {
 }
 
 .tb-hero-content-main {
-    @apply grid md:grid-cols-2 grid-cols-1 items-center justify-between gap-4 md:gap-2;
+    @apply grid md:grid-cols-2 grid-cols-1 items-center justify-between gap-8 md:gap-2;
 }
 
 .tb-hero-content-main .tb-hero-content-left {
@@ -434,7 +434,7 @@ header .btn {
 }
 
 .card-box-mob {
-    @apply flex md:hidden flex-col gap-[70px] mt-[40px];
+    @apply flex md:hidden flex-col gap-[70px] mt-[60px];
 }
 
 .card-box-mob .card-box-rep-mob {
