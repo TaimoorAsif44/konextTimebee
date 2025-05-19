@@ -927,7 +927,10 @@ header .btn {
 .tb-hero-content-main .tb-hero-content-left {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing) * 4);
+  gap: calc(var(--spacing) * 6);
+  @media (width >= 48rem) {
+    gap: calc(var(--spacing) * 4);
+  }
 }
 .tb-hero-content-main .tb-hero-content-left .tb-hero-content-subtitle {
   font-size: var(--text-base);

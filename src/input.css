@@ -321,7 +321,7 @@ header .btn {
 }
 
 .tb-hero-content-main .tb-hero-content-left {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col md:gap-4 gap-6;
 }
 
 .tb-hero-content-main .tb-hero-content-left .tb-hero-content-subtitle {
