@@ -403,7 +403,7 @@ header .btn {
     min-height: 100vh;
   }
   @media (width >= 48rem) {
-    padding: 102px 0;
+    padding: 122px 0 102px;
   }
 }
 .tb-header {
@@ -949,7 +949,7 @@ header .btn {
     padding-right: 10px;
   }
   @media (width >= 64rem) {
-    padding-right: 22px;
+    padding-right: 45px;
   }
 }
 .tb-hero-content-main .tb-hero-content-left .tb-hero-content-description {

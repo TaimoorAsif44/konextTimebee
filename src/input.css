@@ -99,7 +99,7 @@ header .btn {
 }
 
 .hero-banner {
-    @apply bg-[var(--primary-color)] md:p-[102px_0] p-[102px_0_65px_0] md:min-h-screen flex justify-center items-center;
+    @apply bg-[var(--primary-color)] md:p-[122px_0_102px] p-[102px_0_65px_0] md:min-h-screen flex justify-center items-center;
 }
 
 /**** TB Header *****/
@@ -329,7 +329,7 @@ header .btn {
 }
 
 .tb-hero-content-main .tb-hero-content-left .tb-hero-content-title {
-    @apply lg:pr-[22px] md:pr-[10px] pr-[0];
+    @apply lg:pr-[45px] md:pr-[10px] pr-[0];
 }
 
 .tb-hero-content-main .tb-hero-content-left .tb-hero-content-description {
