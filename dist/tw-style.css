@@ -185,6 +185,9 @@
   .fixed {
     position: fixed;
   }
+  .isolate {
+    isolation: isolate;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1681,8 +1684,14 @@ header .btn {
   }
 }
 .comparison-right .tb-section-title {
-  margin-bottom: calc(var(--spacing) * 4);
-  text-align: left;
+  margin-bottom: 40px;
+  text-align: center;
+  @media (width >= 48rem) {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  @media (width >= 48rem) {
+    text-align: left;
+  }
 }
 .comparison-right .comparison-card-box {
   display: flex;
@@ -1690,7 +1699,10 @@ header .btn {
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
   border-color: var(--border-color);
-  padding: 30px 30px 30px 0;
+  padding: 20px 0 20px 0;
+  @media (width >= 48rem) {
+    padding: 30px 30px 30px 0;
+  }
 }
 .comparison-right .comparison-card-box:last-child {
   border-style: var(--tw-border-style);
@@ -1722,15 +1734,18 @@ header .btn {
   color: var(--color-black);
 }
 .tb-grid-points {
-  margin-top: 50px;
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 16px 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  @media (width >= 48rem) {
+    margin-top: 50px;
+  }
   @media (width >= 48rem) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   @media (width >= 48rem) {
-    gap: 46px 20px;
+    gap: 32px 20px;
   }
   @media (width >= 64rem) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1752,19 +1767,19 @@ header .btn {
   background-color: #A961C42E;
   padding: 4px;
   @media (width >= 48rem) {
-    height: 86px;
+    height: 40px;
   }
   @media (width >= 48rem) {
-    width: 86px;
+    width: 40px;
   }
   @media (width >= 48rem) {
-    flex: 0 0 86px;
+    flex: 0 0 40px;
   }
 }
 .tb-grid-points .tb-points-box span img {
   max-width: 16px;
   @media (width >= 48rem) {
-    max-width: 50px;
+    max-width: 24px;
   }
 }
 .tb-grid-points .tb-points-box .tb-points-box-title {
@@ -1772,7 +1787,7 @@ header .btn {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   @media (width >= 48rem) {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 .tb-modal {
