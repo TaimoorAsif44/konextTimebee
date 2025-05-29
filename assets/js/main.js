@@ -15,32 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check scroll position when the user scrolls
     window.addEventListener('scroll', checkScroll);
 
-    // // --- First slider (card-box-images, outside box-slider-main) ---
-    // const firstSlider = document.querySelector('.card-box-images');
-    // if (firstSlider) {
-    //     const swiper = new Swiper(firstSlider, {
-    //         loop: false,
-    //         allowTouchMove: false,
-    //         effect: 'fade',
-    //         fadeEffect: {
-    //             crossFade: true, // optional, makes fade smoother
-    //         },
-    //         speed: 1000,
-    //     });
-    //     // Only select .card-box that are siblings of this slider
-    //     const firstSliderContainer = firstSlider.closest('.grid');
-    //     if (firstSliderContainer) {
-    //         const cardBoxes = firstSliderContainer.querySelectorAll('.card-box');
-    //         cardBoxes.forEach((btn, index) => {
-    //             btn.addEventListener('click', () => {
-    //                 cardBoxes.forEach(c => c.classList.remove('active'));
-    //                 btn.classList.add('active');
-    //                 swiper.slideTo(index);
-    //             });
-    //         });
-    //     }
-    // }
-
     // --- First slider (card-box-images, outside box-slider-main) ---
     const firstSlider = document.querySelector('.card-box-images');
     if (firstSlider) {
@@ -71,35 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-
-
-
-    // // --- Second slider
-    // const remoteSlider = document.querySelector('.remote-card-images');
-    // if (remoteSlider) {
-    //     const swiper = new Swiper(remoteSlider, {
-    //         loop: false,
-    //         allowTouchMove: false,
-    //         effect: 'fade',
-    //         fadeEffect: {
-    //             crossFade: true, // optional, makes fade smoother
-    //         },
-    //         speed: 1000,
-    //     });
-    //     // Only select .card-box that are siblings of this slider
-    //     const remoteSliderContainer = remoteSlider.closest('.grid');
-    //     if (remoteSliderContainer) {
-    //         const remoteCards = remoteSliderContainer.querySelectorAll('.remote-card');
-    //         remoteCards.forEach((btn, index) => {
-    //             btn.addEventListener('click', () => {
-    //                 remoteCards.forEach(c => c.classList.remove('active'));
-    //                 btn.classList.add('active');
-    //                 swiper.slideTo(index);
-    //             });
-    //         });
-    //     }
-    // }
-
     // --- Second slider
     const remoteSlider = document.querySelector('.remote-card-images');
     if (remoteSlider) {
@@ -129,106 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-
-    // const featuresSlider = document.querySelector('.features-slider');
-    // if (featuresSlider) {
-    //     const swiper = new Swiper(featuresSlider, {
-    //         loop: true,
-    //         autoplay: {
-    //             delay: 2500,
-    //             disableOnInteraction: false,
-    //         },
-    //         allowTouchMove: false,
-    //         speed: 800,
-    //         effect: 'creative',
-    //         spaceBetween: 30,
-    //         creativeEffect: {
-    //             prev: {
-    //                 shadow: false,
-    //                 translate: ['-130%', 0, -500],
-    //             },
-    //             next: {
-    //                 shadow: false,
-    //                 translate: ['130%', 0, -500],
-    //             },
-    //         },
-    //         navigation: {
-    //             nextEl: '.features-next',
-    //             prevEl: '.features-prev',
-    //         },
-    //     });
-
-    //     // Pause autoplay on mouse enter
-    //     featuresSlider.addEventListener('mouseenter', function () {
-    //         swiper.autoplay.stop();
-    //     });
-
-    //     // Resume autoplay on mouse leave
-    //     featuresSlider.addEventListener('mouseleave', function () {
-    //         swiper.autoplay.start();
-    //     });
-    // }
-
-    // const featuresSlider = document.querySelector('.features-slider');
-    // const universalArea = document.getElementById('universalArea');
-
-    // if (featuresSlider && universalArea) {
-    //     // Initialize Swiper WITHOUT autoplay
-    //     const swiper = new Swiper(featuresSlider, {
-    //         loop: true,
-    //         autoplay: false, // Start with autoplay disabled
-    //         allowTouchMove: false,
-    //         speed: 800,
-    //         effect: 'creative',
-    //         spaceBetween: 30,
-    //         creativeEffect: {
-    //             prev: {
-    //                 shadow: false,
-    //                 translate: ['-130%', 0, -500],
-    //             },
-    //             next: {
-    //                 shadow: false,
-    //                 translate: ['130%', 0, -500],
-    //             },
-    //         },
-    //         navigation: {
-    //             nextEl: '.features-next',
-    //             prevEl: '.features-prev',
-    //         },
-    //     });
-
-    //     // Use IntersectionObserver to monitor if universalArea is in viewport
-    //     const observer = new IntersectionObserver(
-    //         (entries) => {
-    //             entries.forEach((entry) => {
-    //                 if (entry.isIntersecting) {
-    //                     swiper.params.autoplay = {
-    //                         delay: 2500,
-    //                         disableOnInteraction: false,
-    //                     };
-    //                     swiper.autoplay.start();
-    //                 } else {
-    //                     swiper.autoplay.stop();
-    //                 }
-    //             });
-    //         },
-    //         {
-    //             root: null, // viewport
-    //             threshold: 0.5, // Adjust visibility threshold if needed
-    //         }
-    //     );
-
-    //     observer.observe(universalArea);
-
-    //     // Optional: Pause autoplay on mouse enter/leave
-    //     featuresSlider.addEventListener('mouseenter', function () {
-    //         swiper.autoplay.stop();
-    //     });
-
-    //     featuresSlider.addEventListener('mouseleave', function () {
-    //         swiper.autoplay.start();
-    //     });
-    // }
 
     const featuresSlider = document.querySelector('.features-slider');
     const universalArea = document.getElementById('universalArea');
@@ -319,46 +164,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 })();
 
-// const navItems = document.querySelectorAll('.tb-header .nav-list .nav-item');
-// const menuBg = document.querySelector('.menu-bg');
-
-// if (navItems.length && menuBg) {
-//     navItems.forEach(item => {
-//         item.addEventListener('mouseenter', () => {
-//             menuBg.classList.remove('hidden');
-//         });
-
-//         item.addEventListener('mouseleave', () => {
-//             menuBg.classList.add('hidden');
-//         });
-//     });
-// }
-
-// const navItems = document.querySelectorAll('.tb-header .nav-list .nav-item');
-// const menuBg = document.querySelector('.menu-bg');
-
-// if (navItems.length && menuBg) {
-//     navItems.forEach(item => {
-//         item.addEventListener('mouseenter', () => {
-//             if (window.innerWidth > 1024) {
-//                 console.log('Mouse entered');
-//                 if (item.classList.contains('tb-mega-menu')) {
-//                     console.log('Mouse entered-1');
-//                     menuBg.classList.remove('hidden');
-//                 } else {
-//                     menuBg.classList.add('hidden');
-//                 }
-//             }
-//         });
-
-//         item.addEventListener('mouseleave', () => {
-//             if (window.innerWidth > 1024) {
-//                 menuBg.classList.add('hidden');
-//             }
-//         });
-//     });
-// }
-
 const navItems = document.querySelectorAll('.tb-header .nav-list .nav-item');
 const menuBg = document.querySelector('.menu-bg');
 
@@ -429,118 +234,6 @@ const swiper = new Swiper('.tb-testimonial-slider', {
     },
 });
 
-
-// Mobile menu Function
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const navTrigger = document.querySelector(".tb-nav-trigger");
-//     const header = document.querySelector(".tb-header");
-//     const menuBg = document.querySelector(".menu-bg");
-//     const closeTrigger = document.querySelector(".tb-times");
-//     const navItems = document.querySelectorAll(".nav-item");
-//     const navHeadText = document.querySelector(".mob-nav-head p");
-
-//     // Open main mobile menu
-//     navTrigger.addEventListener("click", function () {
-//         header.classList.add("open-tb-menu");
-//         menuBg.classList.remove("hidden");
-//     });
-
-//     // Close all menus
-//     closeTrigger.addEventListener("click", function () {
-//         header.classList.remove("open-tb-menu", "open-tb-mega-menu");
-//         menuBg.classList.add("hidden");
-//         navHeadText.textContent = "";
-
-//         // Hide all mega menus
-//         document.querySelectorAll(".tb-mega-menu").forEach(menu => {
-//             menu.classList.remove("show-megamenu");
-//         });
-//     });
-
-//     // Handle nav-item clicks
-//     navItems.forEach(item => {
-//         item.addEventListener("click", function () {
-//             const megaMenu = item.querySelector(".tb-mega-menu");
-//             const link = item.querySelector(".nav-link");
-
-//             if (megaMenu) {
-//                 // Remove previously opened mega menus
-//                 document.querySelectorAll(".tb-mega-menu").forEach(menu => {
-//                     menu.classList.remove("show-megamenu");
-//                 });
-
-//                 // Show current submenu
-//                 header.classList.add("open-tb-mega-menu");
-//                 megaMenu.classList.add("show-megamenu");
-
-//                 // Update nav head label
-//                 navHeadText.textContent = link.textContent.trim();
-//             }
-//         });
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const navTrigger = document.querySelector(".tb-nav-trigger");
-//     const header = document.querySelector(".tb-header");
-//     const menuBg = document.querySelector(".menu-bg");
-//     const closeTrigger = document.querySelector(".tb-times");
-//     const navItems = document.querySelectorAll(".nav-item");
-//     const navHeadText = document.querySelector(".mob-nav-head p");
-
-//     // Open main mobile menu
-//     if (window.innerWidth < 1024) {
-//         navTrigger.addEventListener("click", function () {
-//             header.classList.add("open-tb-menu");
-//             menuBg.classList.remove("hidden");
-//         });
-//     }
-
-//     if (window.innerWidth < 1024) {
-//         // Handle menu close button
-//         closeTrigger.addEventListener("click", function () {
-//             if (header.classList.contains("open-tb-mega-menu")) {
-//                 // Close mega menu
-//                 header.classList.remove("open-tb-mega-menu");
-//                 navHeadText.textContent = "";
-    
-//                 document.querySelectorAll(".tb-mega-menu").forEach(menu => {
-//                     menu.classList.remove("show-megamenu");
-//                 });
-//             } else {
-//                 // Close main menu
-//                 header.classList.remove("open-tb-menu");
-//                 menuBg.classList.add("hidden");
-//             }
-//         });
-//     }
-
-//     if (window.innerWidth < 1024) {
-//         // Handle nav-item clicks
-//         navItems.forEach(item => {
-//             item.addEventListener("click", function () {
-//                 const megaMenu = item.querySelector(".tb-mega-menu");
-//                 const link = item.querySelector(".nav-link");
-    
-//                 if (megaMenu) {
-//                     // Remove previously shown submenus
-//                     document.querySelectorAll(".tb-mega-menu").forEach(menu => {
-//                         menu.classList.remove("show-megamenu");
-//                     });
-    
-//                     // Show this submenu
-//                     header.classList.add("open-tb-mega-menu");
-//                     megaMenu.classList.add("show-megamenu");
-    
-//                     // Update nav head text
-//                     navHeadText.textContent = link.textContent.trim();
-//                 }
-//             });
-//         });
-//     }
-// });
-
 // Mobile menu Function
 document.addEventListener("DOMContentLoaded", function () {
     const navTrigger = document.querySelector(".tb-nav-trigger");
@@ -556,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navTrigger.addEventListener("click", function () {
             header.classList.add("open-tb-menu");
             menuBg.classList.remove("hidden");
-    
+
             // Reset header top
             navHeadText.textContent = "";
             navHeadText.style.display = "none";
@@ -572,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
             navHeadText.textContent = "";
             navHeadText.style.display = "none";
             backArrow.style.display = "none";
-    
+
             document.querySelectorAll(".tb-mega-menu").forEach(menu => {
                 menu.classList.remove("show-megamenu");
             });
@@ -585,15 +278,15 @@ document.addEventListener("DOMContentLoaded", function () {
             item.addEventListener("click", function () {
                 const megaMenu = item.querySelector(".tb-mega-menu");
                 const link = item.querySelector(".nav-link");
-    
+
                 if (megaMenu) {
                     document.querySelectorAll(".tb-mega-menu").forEach(menu => {
                         menu.classList.remove("show-megamenu");
                     });
-    
+
                     header.classList.add("open-tb-mega-menu");
                     megaMenu.classList.add("show-megamenu");
-    
+
                     navHeadText.textContent = link.textContent.trim();
                     navHeadText.style.display = "block";
                     backArrow.style.display = "inline-block";
@@ -609,13 +302,95 @@ document.addEventListener("DOMContentLoaded", function () {
             navHeadText.textContent = "";
             navHeadText.style.display = "none";
             backArrow.style.display = "none";
-    
+
             document.querySelectorAll(".tb-mega-menu").forEach(menu => {
                 menu.classList.remove("show-megamenu");
             });
         });
     }
 });
+
+
+// Feature Page JS
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".feature-work-card");
+    const slides = document.querySelectorAll(".tb-feature-work-right-slide");
+    let currentIndex = 0;
+    let interval;
+    let isCycling = false;
+
+    function resetProgressBars() {
+        document.querySelectorAll(".progress-bar").forEach(bar => {
+            bar.style.transition = "none";
+            bar.style.width = "0%";
+            void bar.offsetWidth; // trigger reflow
+            bar.style.transition = "width 4s linear";
+        });
+    }
+
+    function activateCard(index) {
+        // Update slide visibility
+        slides.forEach(slide => slide.classList.remove("active"));
+        if (slides[index]) slides[index].classList.add("active");
+
+        // Update card active class
+        cards.forEach(card => card.classList.remove("active"));
+        if (cards[index]) cards[index].classList.add("active");
+
+        // Progress bar animation
+        resetProgressBars();
+        const bar = cards[index].querySelector(".progress-bar");
+        if (bar) {
+            bar.style.width = "100%";
+        }
+
+        currentIndex = index;
+    }
+
+    function startAutoCycle() {
+        if (isCycling) return;
+        isCycling = true;
+        activateCard(currentIndex);
+        interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            activateCard(currentIndex);
+        }, 4000);
+    }
+
+    function stopAutoCycle() {
+        isCycling = false;
+        clearInterval(interval);
+        resetProgressBars();
+    }
+
+    cards.forEach((card, index) => {
+        card.addEventListener("click", () => {
+            stopAutoCycle();
+            activateCard(index);
+            currentIndex = index;
+            startAutoCycle();
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startAutoCycle();
+            } else {
+                stopAutoCycle();
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    const section = document.querySelector(".tb-hover-timely-area");
+    if (section) {
+        observer.observe(section);
+    }
+});
+
 
 
 
