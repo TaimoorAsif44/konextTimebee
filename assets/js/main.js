@@ -391,7 +391,74 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Feature Dropdown JS
 
+document.addEventListener("DOMContentLoaded", function () {
+    const currentSlug = window.location.pathname;
 
+    // Utility to extract slug segment from href
+    function getFeatureSlug(href) {
+        const parts = href.split('features/');
+        return parts.length > 1 ? parts[1].replace(/\/$/, '') : '';
+    }
 
+    // Check top-level feature buttons
+    document.querySelectorAll('.tb-feature-buttons-list > .feature-button').forEach(button => {
+        const href = button.getAttribute('href');
+        const slugPart = getFeatureSlug(href);
+        if (slugPart && currentSlug.includes(slugPart)) {
+            button.classList.add('active-feat');
+        }
+    });
 
+    // Check dropdown feature links
+    document.querySelectorAll('.feature-button-dropdown-list a').forEach(dropLink => {
+        const href = dropLink.getAttribute('href');
+        const slugPart = getFeatureSlug(href);
+        if (slugPart && currentSlug.includes(slugPart)) {
+            dropLink.classList.add('active');
+            const dropdownButton = document.querySelector('.feature-button-dropdown > .feature-button');
+            if (dropdownButton) {
+                dropdownButton.classList.add('active-feat');
+            }
+        }
+    });
+});
+
+// Productivity Accordion JS
+document.addEventListener('DOMContentLoaded', function () {
+    const toggles = document.querySelectorAll('.feature-toggle');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+            const currentCard = this.closest('.productivity-point-card');
+            currentCard.classList.toggle('open-feature');
+        });
+    });
+});
+
+// Feature Work Slider JS
+
+document.addEventListener('DOMContentLoaded', function () {
+    const featuresWork = document.querySelector('.tb-feature-work-area-mob');
+
+    if (featuresWork) {
+        try {
+            const swiper = new Swiper(featuresWork, {
+                loop: true,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 4000,
+                },
+                allowTouchMove: true,
+                speed: 800,
+                pagination: {
+                    el: '.feature-work-pagination',
+                    clickable: true,
+                },
+            });
+        } catch (error) {
+            console.error('Failed to initialize Swiper:', error);
+        }
+    }
+});
