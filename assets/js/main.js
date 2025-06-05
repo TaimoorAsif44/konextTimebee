@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
             bar.style.transition = "none";
             bar.style.width = "0%";
             void bar.offsetWidth; // trigger reflow
-            bar.style.transition = "width 4s linear";
+            bar.style.transition = "width 8s linear";
         });
     }
 
@@ -355,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
         interval = setInterval(() => {
             currentIndex = (currentIndex + 1) % cards.length;
             activateCard(currentIndex);
-        }, 4000);
+        }, 8000);
     }
 
     function stopAutoCycle() {
@@ -391,7 +391,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Feature Dropdown JS
 
 document.addEventListener("DOMContentLoaded", function () {
     const currentSlug = window.location.pathname;
@@ -448,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 loop: true,
                 spaceBetween: 20,
                 autoplay: {
-                    delay: 4000,
+                    delay: 8000,
                 },
                 allowTouchMove: true,
                 speed: 800,
