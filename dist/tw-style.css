@@ -800,7 +800,9 @@ header .btn {
 }
 .tb-mega-menu .tb-mega-menu-inner .tb-mega-menu-rows {
   display: flex;
+  max-height: 68vh;
   flex-direction: column;
+  overflow-y: auto;
   padding: calc(var(--spacing) * 0);
   @media (width >= 64rem) {
     display: grid;
@@ -1396,7 +1398,7 @@ header .btn {
 .tb-cta-area .tb-cta-box-content {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: calc(var(--spacing) * 4);
 }
