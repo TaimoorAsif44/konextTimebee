@@ -528,7 +528,11 @@ header .btn {
 }
 
 .tb-cta-area .tb-cta-box-content .tb-cta-box-content-left {
-    @apply md:pb-[50px] pb-0 flex flex-col gap-4 max-w-[462px];
+    @apply md:pb-[36px] md:pt-[26px] pt-0 pb-0 flex flex-col gap-4 max-w-[462px];
+}
+
+.tb-cta-area.tb-section-bg .tb-cta-box-content .tb-cta-box-content-left {
+    @apply md:pb-[50px] pb-0 md:pt-0;
 }
 
 .tb-cta-area .tb-cta-box-content .tb-cta-box-content-left h2 {

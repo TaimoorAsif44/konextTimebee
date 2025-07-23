@@ -1407,7 +1407,20 @@ header .btn {
   max-width: 462px;
   flex-direction: column;
   gap: calc(var(--spacing) * 4);
+  padding-top: calc(var(--spacing) * 0);
   padding-bottom: calc(var(--spacing) * 0);
+  @media (width >= 48rem) {
+    padding-top: 26px;
+  }
+  @media (width >= 48rem) {
+    padding-bottom: 36px;
+  }
+}
+.tb-cta-area.tb-section-bg .tb-cta-box-content .tb-cta-box-content-left {
+  padding-bottom: calc(var(--spacing) * 0);
+  @media (width >= 48rem) {
+    padding-top: calc(var(--spacing) * 0);
+  }
   @media (width >= 48rem) {
     padding-bottom: 50px;
   }
