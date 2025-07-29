@@ -851,6 +851,7 @@ header .btn {
   transition-duration: 300ms;
 }
 .tb-mega-menu .tb-mega-menu-inner .tb-mega-menu-rows .tb-mega-card-box .submenu-items img {
+  max-height: 30px;
   width: 20px;
   --tw-brightness: brightness(0%);
   filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);

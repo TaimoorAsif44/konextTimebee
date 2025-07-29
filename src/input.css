@@ -265,7 +265,7 @@ header .btn {
 }
 
 .tb-mega-menu .tb-mega-menu-inner .tb-mega-menu-rows .tb-mega-card-box .submenu-items img {
-    @apply brightness-0 w-[20px];
+    @apply brightness-0 w-[20px] max-h-[30px];
 }
 
 .tb-mega-menu .tb-mega-menu-inner .tb-mega-menu-rows .tb-mega-card-box .submenu-items:hover img {
