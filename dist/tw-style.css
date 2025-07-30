@@ -1704,6 +1704,10 @@ header .btn {
 .accordion-group .accordion-content p {
   max-width: 1015px;
 }
+.accordion-group .accordion-content ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
 .comparison-area-inner {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));

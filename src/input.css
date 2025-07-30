@@ -678,6 +678,10 @@ header .btn {
     @apply max-w-[1015px];
 }
 
+.accordion-group .accordion-content ul {
+    @apply list-disc list-inside;
+}
+
 .comparison-area-inner {
     @apply grid md:grid-cols-2 grid-cols-1 items-center gap-5;
 }
