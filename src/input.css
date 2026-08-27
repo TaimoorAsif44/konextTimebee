@@ -563,6 +563,18 @@ header .btn {
     @apply md:pb-[0px] pb-[0px];
 }
 
+.tb-productive-video .tb-youtube-video {
+    @apply relative;
+}
+
+.tb-productive-video .tb-youtube-video .play-video-icon {
+    @apply cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[145px] h-[145px];
+}
+
+.tb-productive-video .tb-youtube-video > img {
+    @apply rounded-[45px] md:shadow-[0px_0.93px_7.48px_2.8px_#4D58E221];
+}
+
 .tb-testimonial-area {
     @apply grid grid-cols-11 grid-rows-2 gap-4 md:mt-[50px] mt-[40px];
 }

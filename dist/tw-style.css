@@ -1477,6 +1477,28 @@ header .btn {
     padding-bottom: 0px;
   }
 }
+.tb-productive-video .tb-youtube-video {
+  position: relative;
+}
+.tb-productive-video .tb-youtube-video .play-video-icon {
+  position: absolute;
+  top: calc(1/2 * 100%);
+  left: calc(1/2 * 100%);
+  height: 145px;
+  width: 145px;
+  --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  cursor: pointer;
+}
+.tb-productive-video .tb-youtube-video > img {
+  border-radius: 45px;
+  @media (width >= 48rem) {
+    --tw-shadow: 0px 0.93px 7.48px 2.8px var(--tw-shadow-color, #4D58E221);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}
 .tb-testimonial-area {
   margin-top: 40px;
   display: grid;
